@@ -16,10 +16,12 @@ state = {
   isLoading: false,
   dataFetched: false,
 };
+  
 //saves user text input
 handleText = (text) => {
   this.setState({ nameInfo: text });
 };
+  
 //makes http call and updates boolean values
 fetchData = async (n) => {
   this.setState({ isLoading: true });
@@ -77,6 +79,7 @@ display() {
     return <Text>No Results Found</Text>;
   }
 }
+
 render() {
   console.log()
   return (
@@ -112,6 +115,7 @@ render() {
   );
 }
 }
+
 const styles = StyleSheet.create({
 container: {
   paddingTop: 70,
